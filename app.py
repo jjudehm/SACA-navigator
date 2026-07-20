@@ -317,7 +317,6 @@ if is_ar:
 
 st.title(t["title"])
 st.caption(t["subtitle"])
-st.caption("Version 5 — Step-by-step flow and improved voice response")
 
 category_key = "category_ar" if is_ar else "category_en"
 subcategory_key = "subcategory_ar" if is_ar else "subcategory_en"
