@@ -458,11 +458,26 @@ speak_button(
     t["voice_error"],
 )
 
-x = float(selected_item["x"] or 0.5)
-y = float(selected_item["y"] or 0.5)
+# The coordinates in locations.json are normalized to the usable building area,
+# not to the full exported drawing image (which still contains a small border).
+# Convert building-relative coordinates to full-image coordinates before drawing.
+raw_x = float(selected_item["x"] or 0.5)
+raw_y = float(selected_item["y"] or 0.5)
 
 floor_code = selected_item.get("floor_code", "GF")
 map_path = FLOOR_MAPS.get(floor_code)
+
+# Bounds of the actual building inside each cropped map image:
+# (left, top, right, bottom), expressed as fractions of the image size.
+BUILDING_BOUNDS = {
+    "GF": (0.065, 0.095, 0.935, 0.905),
+    "FF": (0.065, 0.095, 0.935, 0.905),
+}
+left, top, right, bottom = BUILDING_BOUNDS.get(
+    floor_code, (0.0, 0.0, 1.0, 1.0)
+)
+x = left + raw_x * (right - left)
+y = top + raw_y * (bottom - top)
 
 st.subheader(t["coordinates"])
 
