@@ -482,13 +482,18 @@ if map_path and map_path.exists():
             width:100%;
             height:auto;
             object-fit:contain;">
-        <div style="
+        <div title="Destination" style="
             position:absolute;
-            left:calc({x * 100}% - 16px);
-            top:calc({y * 100}% - 34px);
-            font-size:38px;
-            line-height:1;
-            filter:drop-shadow(0 3px 3px rgba(0,0,0,.45));">📍</div>
+            left:calc({x * 100}% - 9px);
+            top:calc({y * 100}% - 9px);
+            width:18px;
+            height:18px;
+            border-radius:50%;
+            background:#e11d48;
+            border:3px solid white;
+            box-shadow:0 0 0 4px rgba(225,29,72,.28), 0 2px 8px rgba(0,0,0,.55);
+            line-height:1;">
+        </div>
     </div>
     """
     components.html(map_html, height=500, scrolling=False)

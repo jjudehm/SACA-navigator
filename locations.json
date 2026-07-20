@@ -12,15 +12,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-002",
-    "x": 0.43,
-    "y": 0.2,
+    "x": 0.495,
+    "y": 0.225,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "GF-N-MAIN",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المدخل الرئيسي ادخل مباشرة؛ ستجد الاستقبال أمامك.",
     "directions_en": "Go to the ground floor and follow the route to Reception.",
     "aliases": "الاستقبال | الريسبشن | مكتب الاستقبال | reception | front desk",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-N-MAIN",
@@ -35,15 +36,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-001",
-    "x": 0.39,
-    "y": 0.08,
+    "x": 0.495,
+    "y": 0.115,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "مؤكد",
     "directions_ar": "نقطة الدخول الرئيسية للمبنى، شمال الاستقبال مباشرة.",
     "directions_en": "Go to the ground floor and follow the route to Main Entrance.",
     "aliases": "المدخل الرئيسي | البوابة الرئيسية | main entrance | front entrance",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-E-SOUTH",
@@ -58,15 +60,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-017",
-    "x": 0.49,
-    "y": 0.93,
+    "x": 0.505,
+    "y": 0.885,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "GF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "من الاستقبال اتجه جنوبًا عبر الممر المحيط بالفناء حتى المدخل.",
     "directions_en": "Go to the ground floor and follow the route to South Entrance.",
     "aliases": "المدخل الجنوبي | المدخل الخلفي | south entrance | rear entrance",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-SA-DIR",
@@ -81,15 +84,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-030",
-    "x": 0.08,
-    "y": 0.12,
+    "x": 0.055,
+    "y": 0.07,
     "area_ar": "الشمال الغربي",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "من الاستقبال اتجه غربًا عبر الممر الشمالي حتى نهاية جناح شؤون الطلاب.",
     "directions_en": "Go to the ground floor and follow the route to Director of Student Affairs.",
     "aliases": "مدير شؤون الطلاب | إدارة شؤون الطلاب | student affairs director",
-    "area_en": "Northwest"
+    "area_en": "Northwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-SA-SEC",
@@ -104,15 +108,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-031",
-    "x": 0.2,
-    "y": 0.12,
+    "x": 0.135,
+    "y": 0.07,
     "area_ar": "الشمال الغربي",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا؛ السكرتارية بجوار مكتب مدير شؤون الطلاب.",
     "directions_en": "Go to the ground floor and follow the route to Student Affairs Secretary.",
     "aliases": "سكرتير شؤون الطلاب | سكرتارية شؤون الطلاب | student affairs secretary",
-    "area_en": "Northwest"
+    "area_en": "Northwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-HOUSING",
@@ -127,15 +132,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-029",
-    "x": 0.08,
-    "y": 0.25,
+    "x": 0.055,
+    "y": 0.175,
     "area_ar": "الغرب",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا إلى جناح شؤون الطلاب ثم جنوبًا قليلًا.",
     "directions_en": "Go to the ground floor and follow the route to Housing Supervisor.",
     "aliases": "مشرف السكن | إدارة السكن | housing supervisor | housing office",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-ADMREG",
@@ -150,15 +156,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-028",
-    "x": 0.08,
-    "y": 0.36,
+    "x": 0.055,
+    "y": 0.27,
     "area_ar": "الغرب",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا؛ المكتب أسفل مكتب مشرف السكن.",
     "directions_en": "Go to the ground floor and follow the route to Admission & Registration Supervisor.",
     "aliases": "القبول والتسجيل | التسجيل | admission and registration",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-HALL",
@@ -173,15 +180,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-032",
-    "x": 0.2,
-    "y": 0.27,
+    "x": 0.135,
+    "y": 0.165,
     "area_ar": "الشمال الغربي",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا؛ الصالة بين جناح شؤون الطلاب والمسرح.",
     "directions_en": "Go to the ground floor and follow the route to Hall.",
     "aliases": "الصالة | القاعة | hall",
-    "area_en": "Northwest"
+    "area_en": "Northwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-THEATER",
@@ -196,15 +204,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-033",
-    "x": 0.34,
-    "y": 0.26,
+    "x": 0.26,
+    "y": 0.165,
     "area_ar": "الشمال الأوسط الغربي",
     "nearest_node": "GF-C-NORTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "من الاستقبال اتجه غربًا؛ مدخل المسرح بعد الصالة.",
     "directions_en": "Go to the ground floor and follow the route to Theater.",
     "aliases": "المسرح | مسرح | theater | auditorium",
-    "area_en": "الشمال الأوسط الغربي"
+    "area_en": "الشمال الأوسط الغربي",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-SA-OFFICER",
@@ -219,15 +228,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-025",
-    "x": 0.11,
-    "y": 0.48,
+    "x": 0.055,
+    "y": 0.445,
     "area_ar": "الغرب",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا؛ المكتب قبل صالة الانتظار.",
     "directions_en": "Go to the ground floor and follow the route to Students Affairs Officer.",
     "aliases": "موظف شؤون الطلاب | مكتب شؤون الطلاب | student affairs officer",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-WAIT",
@@ -242,15 +252,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-025",
-    "x": 0.1,
-    "y": 0.64,
+    "x": 0.055,
+    "y": 0.585,
     "area_ar": "الغرب",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا حتى منتصف الجناح الغربي.",
     "directions_en": "Go to the ground floor and follow the route to Waiting Lounge.",
     "aliases": "صالة الانتظار | الانتظار | waiting lounge | waiting area",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-SUPPORT-DIR",
@@ -265,7 +276,7 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-024",
-    "x": 0.1,
+    "x": 0.055,
     "y": 0.84,
     "area_ar": "الجنوب الغربي",
     "nearest_node": "GF-C-SOUTH",
@@ -273,7 +284,8 @@
     "directions_ar": "اتجه جنوبًا ثم غربًا؛ المكتب في الركن الجنوبي الغربي.",
     "directions_en": "Go to the ground floor and follow the route to Director of Support Services.",
     "aliases": "مدير الخدمات المساندة | الخدمات المساندة | support services",
-    "area_en": "Southwest"
+    "area_en": "Southwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-SUPPORT-SEC",
@@ -288,7 +300,7 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-023",
-    "x": 0.22,
+    "x": 0.14,
     "y": 0.84,
     "area_ar": "الجنوب الغربي",
     "nearest_node": "GF-C-SOUTH",
@@ -296,7 +308,8 @@
     "directions_ar": "اتجه جنوبًا ثم غربًا؛ السكرتارية بجوار المدير.",
     "directions_en": "Go to the ground floor and follow the route to Support Services Secretary.",
     "aliases": "سكرتير الخدمات المساندة | support services secretary",
-    "area_en": "Southwest"
+    "area_en": "Southwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-PROG",
@@ -311,15 +324,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-003",
-    "x": 0.58,
-    "y": 0.12,
+    "x": 0.685,
+    "y": 0.075,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "GF-C-NORTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا عبر الممر الشمالي؛ القسم بعد الدرج الأول.",
     "directions_en": "Go to the ground floor and follow the route to Programming Department.",
     "aliases": "قسم البرمجة | البرمجة | programming department",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-NET",
@@ -334,15 +348,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-005",
-    "x": 0.7,
-    "y": 0.12,
+    "x": 0.79,
+    "y": 0.075,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "GF-C-NORTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا؛ قسم الشبكات بعد قسم البرمجة.",
     "directions_en": "Go to the ground floor and follow the route to IT Network.",
     "aliases": "قسم الشبكات | الشبكات | IT network | network department",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-IT-SEC",
@@ -357,15 +372,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-007",
-    "x": 0.8,
-    "y": 0.12,
+    "x": 0.875,
+    "y": 0.075,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "GF-C-NORTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا؛ السكرتارية بعد قسم الشبكات.",
     "directions_en": "Go to the ground floor and follow the route to IT Secretary.",
     "aliases": "سكرتير تقنية المعلومات | سكرتارية تقنية المعلومات | IT secretary",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-IT-MGR",
@@ -380,15 +396,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-008",
-    "x": 0.91,
-    "y": 0.19,
+    "x": 0.945,
+    "y": 0.17,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا حتى نهاية الممر الشمالي.",
     "directions_en": "Go to the ground floor and follow the route to IT Manager.",
     "aliases": "مدير تقنية المعلومات | مدير الآي تي | IT manager",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-BMS",
@@ -403,15 +420,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-004",
-    "x": 0.57,
-    "y": 0.32,
+    "x": 0.685,
+    "y": 0.245,
     "area_ar": "الشمال الشرقي الأوسط",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا قليلًا؛ الغرفة على يسار الممر.",
     "directions_en": "Go to the ground floor and follow the route to BMS Room.",
     "aliases": "غرفة BMS | نظام إدارة المبنى | BMS",
-    "area_en": "Northeast Central"
+    "area_en": "Northeast Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-IT-WORK",
@@ -426,15 +444,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-006",
-    "x": 0.69,
-    "y": 0.32,
+    "x": 0.79,
+    "y": 0.245,
     "area_ar": "الشمال الشرقي الأوسط",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا؛ الورشة بجوار BMS.",
     "directions_en": "Go to the ground floor and follow the route to IT Workshop.",
     "aliases": "ورشة تقنية المعلومات | ورشة الآي تي | IT workshop",
-    "area_en": "Northeast Central"
+    "area_en": "Northeast Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-COMMS",
@@ -449,15 +468,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-011",
-    "x": 0.72,
-    "y": 0.47,
+    "x": 0.875,
+    "y": 0.355,
     "area_ar": "الشرق الأوسط",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا بمحاذاة جناح التقنية.",
     "directions_en": "Go to the ground floor and follow the route to Communication Room.",
     "aliases": "غرفة الاتصالات | الاتصالات | communication room | telecom room",
-    "area_en": "East Central"
+    "area_en": "East Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-IT-STORE",
@@ -472,15 +492,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-010",
-    "x": 0.7,
-    "y": 0.63,
+    "x": 0.775,
+    "y": 0.495,
     "area_ar": "الشرق الأوسط",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا؛ المستودع بجوار غرفة الاتصالات.",
     "directions_en": "Go to the ground floor and follow the route to IT Storage Room.",
     "aliases": "مستودع تقنية المعلومات | مخزن الآي تي | IT storage",
-    "area_en": "East Central"
+    "area_en": "East Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-BDM",
@@ -495,15 +516,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-011",
-    "x": 0.91,
-    "y": 0.57,
+    "x": 0.945,
+    "y": 0.585,
     "area_ar": "الشرق",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا؛ المكتب الكبير في منتصف الجناح الشرقي.",
     "directions_en": "Go to the ground floor and follow the route to Business Development Manager.",
     "aliases": "مدير تطوير الأعمال | تطوير الأعمال | business development manager",
-    "area_en": "East"
+    "area_en": "East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-BDM-SEC",
@@ -518,15 +540,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-012",
-    "x": 0.85,
-    "y": 0.74,
+    "x": 0.945,
+    "y": 0.775,
     "area_ar": "الجنوب الشرقي",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا؛ السكرتارية أسفل مكتب المدير.",
     "directions_en": "Go to the ground floor and follow the route to BDM Secretary.",
     "aliases": "سكرتير تطوير الأعمال | BDM secretary",
-    "area_en": "Southeast"
+    "area_en": "Southeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-CAFE",
@@ -541,15 +564,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-018",
-    "x": 0.48,
-    "y": 0.66,
+    "x": 0.505,
+    "y": 0.675,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "GF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه جنوبًا حول الفناء ثم غربًا؛ الكافتيريا تطل على الفناء.",
     "directions_en": "Go to the ground floor and follow the route to Cafeteria.",
     "aliases": "الكافتيريا | الكافيتيريا | المقهى | مكان الأكل | cafeteria | cafe",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-PANTRY",
@@ -564,15 +588,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-002",
-    "x": 0.57,
-    "y": 0.67,
+    "x": 0.65,
+    "y": 0.66,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "GF-CAFE",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه إلى الكافتيريا؛ البوفيه ملاصق لها من الشرق.",
     "directions_en": "Go to the ground floor and follow the route to Pantry.",
     "aliases": "البوفيه | المطبخ الصغير | البانتري | pantry | kitchenette",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-MEET-W",
@@ -587,15 +612,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-027",
-    "x": 0.31,
-    "y": 0.5,
+    "x": 0.215,
+    "y": 0.485,
     "area_ar": "الغرب الأوسط",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا بمحاذاة الفناء.",
     "directions_en": "Go to the ground floor and follow the route to West Meeting Room.",
     "aliases": "غرفة الاجتماعات الغربية | اجتماعات شؤون الطلاب | west meeting room",
-    "area_en": "West Central"
+    "area_en": "West Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-MEET-E",
@@ -610,15 +636,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-009",
-    "x": 0.9,
-    "y": 0.47,
+    "x": 0.945,
+    "y": 0.48,
     "area_ar": "الشرق",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا؛ الغرفة قبل مكتب تطوير الأعمال.",
     "directions_en": "Go to the ground floor and follow the route to East Meeting Room.",
     "aliases": "غرفة الاجتماعات الشرقية | east meeting room",
-    "area_en": "East"
+    "area_en": "East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-ELEV",
@@ -633,15 +660,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-L01",
-    "x": 0.43,
-    "y": 0.35,
+    "x": 0.605,
+    "y": 0.275,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "مؤكد",
     "directions_ar": "من الاستقبال اتجه قليلًا إلى الجنوب الغربي؛ بجوار غرفة الكهرباء.",
     "directions_en": "Go to the ground floor and follow the route to Elevator.",
     "aliases": "المصعد | الأسانسير | elevator | lift",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-ELEC",
@@ -656,15 +684,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-E01",
-    "x": 0.39,
-    "y": 0.35,
+    "x": 0.57,
+    "y": 0.275,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "مؤكد",
     "directions_ar": "من الاستقبال اتجه قليلًا إلى الجنوب الغربي؛ بجوار المصعد.",
     "directions_en": "Go to the ground floor and follow the route to Electrical Room.",
     "aliases": "غرفة الكهرباء | الكهرباء | electrical room",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-STAIR1",
@@ -679,15 +708,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-R01",
-    "x": 0.46,
-    "y": 0.12,
+    "x": 0.605,
+    "y": 0.085,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شمالًا نحو المدخل ثم شرقًا قليلًا.",
     "directions_en": "Go to the ground floor and follow the route to Stair 1.",
     "aliases": "الدرج 1 | السلم 1 | stair 1",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-STAIR2",
@@ -702,15 +732,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-R02",
-    "x": 0.91,
-    "y": 0.4,
+    "x": 0.945,
+    "y": 0.35,
     "area_ar": "الشرق",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا في الممر الشرقي.",
     "directions_en": "Go to the ground floor and follow the route to Stair 2.",
     "aliases": "الدرج 2 | السلم 2 | stair 2",
-    "area_en": "East"
+    "area_en": "East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-STAIR3",
@@ -725,15 +756,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-R03",
-    "x": 0.13,
-    "y": 0.42,
+    "x": 0.055,
+    "y": 0.35,
     "area_ar": "الغرب",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا في جناح شؤون الطلاب.",
     "directions_en": "Go to the ground floor and follow the route to Stair 3.",
     "aliases": "الدرج 3 | السلم 3 | stair 3",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-WC-NW",
@@ -748,15 +780,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-WC",
-    "x": 0.18,
-    "y": 0.31,
+    "x": 0.125,
+    "y": 0.255,
     "area_ar": "الشمال الغربي",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا؛ دورات المياه بجوار الصالة.",
     "directions_en": "Go to the ground floor and follow the route to Northwest Restrooms.",
     "aliases": "دورات المياه | الحمام | حمامات شؤون الطلاب | restroom | bathroom | toilet",
-    "area_en": "Northwest"
+    "area_en": "Northwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-WC-NE",
@@ -771,15 +804,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-WC",
-    "x": 0.87,
-    "y": 0.31,
+    "x": 0.905,
+    "y": 0.255,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "GF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا؛ دورات المياه قرب مكتب مدير التقنية.",
     "directions_en": "Go to the ground floor and follow the route to Northeast Restrooms.",
     "aliases": "دورات المياه | الحمام | حمامات التقنية | restroom | bathroom | toilet",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-WC-MEN",
@@ -794,15 +828,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "",
-    "x": 0.36,
-    "y": 0.63,
+    "x": 0.215,
+    "y": 0.625,
     "area_ar": "الغرب الأوسط",
     "nearest_node": "GF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا؛ حمام الرجال بجوار الغرفة G-027.",
     "directions_en": "Go to the ground floor and follow the route to Men's Restroom.",
     "aliases": "حمام الرجال | دورة مياه الرجال | men's restroom | male restroom | bathroom",
-    "area_en": "West Central"
+    "area_en": "West Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-WC-WOMEN",
@@ -817,15 +852,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "",
-    "x": 0.7,
-    "y": 0.64,
+    "x": 0.805,
+    "y": 0.625,
     "area_ar": "الجنوب الشرقي الأوسط",
     "nearest_node": "GF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه جنوبًا نحو الجناح الشرقي؛ حمام النساء ملاصق للغرفة G-010 ولا يحمل رقم غرفة.",
     "directions_en": "Go to the ground floor and follow the route to Women's Restroom.",
     "aliases": "حمام النساء | دورة مياه النساء | women's restroom | ladies restroom | bathroom",
-    "area_en": "Southeast Central"
+    "area_en": "Southeast Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-WOMEN-LOUNGE",
@@ -840,15 +876,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-013",
-    "x": 0.8,
-    "y": 0.84,
+    "x": 0.945,
+    "y": 0.835,
     "area_ar": "الجنوب الشرقي",
     "nearest_node": "GF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه جنوبًا ثم شرقًا عبر الممر الجنوبي؛ استراحة النساء في الغرفة G-013.",
     "directions_en": "Go to the ground floor and follow the route to Women's Lounge.",
     "aliases": "استراحة النساء | صالة النساء | women lounge | women's lounge",
-    "area_en": "Southeast"
+    "area_en": "Southeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-STORE-S",
@@ -863,15 +900,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-021",
-    "x": 0.62,
-    "y": 0.84,
+    "x": 0.69,
+    "y": 0.835,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "GF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه جنوبًا إلى الممر الجنوبي؛ المستودع بين المكاتب.",
     "directions_en": "Go to the ground floor and follow the route to South Storage Room.",
     "aliases": "المستودع الجنوبي | المخزن | south storage room | storage",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-ELEV",
@@ -886,15 +924,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-EL-02",
-    "x": 0.67,
-    "y": 0.22,
+    "x": 0.595,
+    "y": 0.255,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "FF-C-NORTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "بعد الصعود من الدور الأرضي ستصل إلى المصعد في الجهة الشمالية الوسطى من الدور الأول.",
     "directions_en": "Go to the first floor and follow the route to Elevator.",
     "aliases": "المصعد | الأسانسير | elevator | lift",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-ELEC",
@@ -909,15 +948,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-E-02",
-    "x": 0.63,
-    "y": 0.22,
+    "x": 0.565,
+    "y": 0.255,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "FF-ELEV",
     "confidence_ar": "مؤكد",
     "directions_ar": "بجوار المصعد مباشرة من الجهة الغربية.",
     "directions_en": "Go to the first floor and follow the route to Electrical Room.",
     "aliases": "غرفة الكهرباء | الكهرباء | electrical room",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-STAIR-C",
@@ -932,15 +972,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-R-04",
-    "x": 0.67,
-    "y": 0.12,
+    "x": 0.595,
+    "y": 0.095,
     "area_ar": "الشمال الأوسط",
     "nearest_node": "FF-C-NORTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "فوق المصعد مباشرة في الجهة الشمالية الوسطى.",
     "directions_en": "Go to the first floor and follow the route to Central Stair.",
     "aliases": "الدرج الأوسط | السلم الأوسط | stair 4 | central stair",
-    "area_en": "North Central"
+    "area_en": "North Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-STAIR-W",
@@ -955,7 +996,7 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-R-06",
-    "x": 0.13,
+    "x": 0.055,
     "y": 0.35,
     "area_ar": "الغرب",
     "nearest_node": "FF-C-WEST",
@@ -963,7 +1004,8 @@
     "directions_ar": "من المصعد اتجه غربًا عبر الممر الشمالي حتى نهاية الجناح الغربي.",
     "directions_en": "Go to the first floor and follow the route to West Stair.",
     "aliases": "الدرج الغربي | السلم الغربي | stair 6 | west stair",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-STAIR-E",
@@ -978,15 +1020,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-R-05",
-    "x": 0.91,
-    "y": 0.36,
+    "x": 0.945,
+    "y": 0.35,
     "area_ar": "الشرق",
     "nearest_node": "FF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه شرقًا حتى نهاية الجناح الشرقي.",
     "directions_en": "Go to the first floor and follow the route to East Stair.",
     "aliases": "الدرج الشرقي | السلم الشرقي | stair 5 | east stair",
-    "area_en": "East"
+    "area_en": "East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRES",
@@ -1001,15 +1044,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-027",
-    "x": 0.08,
-    "y": 0.15,
+    "x": 0.06,
+    "y": 0.17,
     "area_ar": "الشمال الغربي",
     "nearest_node": "FF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه غربًا عبر الممر الشمالي حتى نهاية الجناح؛ المكتب الكبير في الركن الشمالي الغربي.",
     "directions_en": "Go to the first floor and follow the route to President's Office of Saudi Academy Civil Aviation.",
     "aliases": "مكتب الرئيس | رئيس الأكاديمية | مكتب رئيس الأكاديمية | president office | academy president",
-    "area_en": "Northwest"
+    "area_en": "Northwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRES-SEC",
@@ -1024,7 +1068,7 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-028",
-    "x": 0.27,
+    "x": 0.145,
     "y": 0.08,
     "area_ar": "الشمال الغربي",
     "nearest_node": "FF-C-WEST",
@@ -1032,7 +1076,8 @@
     "directions_ar": "اتجه غربًا من المصعد؛ السكرتارية بجوار مكتب الرئيس من الجهة الشرقية.",
     "directions_en": "Go to the first floor and follow the route to President's Secretary.",
     "aliases": "سكرتير الرئيس | سكرتارية الرئيس | president secretary",
-    "area_en": "Northwest"
+    "area_en": "Northwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRES-STAFF-1",
@@ -1047,15 +1092,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-025",
-    "x": 0.1,
-    "y": 0.43,
+    "x": 0.06,
+    "y": 0.465,
     "area_ar": "الغرب",
     "nearest_node": "FF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا قليلًا؛ المكتب أعلى مكتب موظفي الرئيس الثاني.",
     "directions_en": "Go to the first floor and follow the route to President Office Staff 1.",
     "aliases": "موظفو مكتب الرئيس | فريق مكتب الرئيس | president office staff",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRES-STAFF-2",
@@ -1070,15 +1116,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-024",
-    "x": 0.1,
-    "y": 0.59,
+    "x": 0.06,
+    "y": 0.615,
     "area_ar": "الغرب",
     "nearest_node": "FF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه غربًا ثم جنوبًا؛ المكتب أسفل مكتب موظفي الرئيس الأول.",
     "directions_en": "Go to the first floor and follow the route to President Office Staff 2.",
     "aliases": "موظفو مكتب الرئيس | فريق مكتب الرئيس | president office staff 2",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRES-MEET",
@@ -1093,15 +1140,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-026",
-    "x": 0.34,
-    "y": 0.43,
+    "x": 0.215,
+    "y": 0.465,
     "area_ar": "الغرب الأوسط",
     "nearest_node": "FF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه غربًا ثم جنوبًا بمحاذاة الفناء؛ الغرفة بجوار غرفة الاتصالات.",
     "directions_en": "Go to the first floor and follow the route to President Meeting Room.",
     "aliases": "غرفة اجتماعات الرئيس | اجتماع الرئيس | president meeting room",
-    "area_en": "West Central"
+    "area_en": "West Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-COMMS",
@@ -1116,15 +1164,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-C-03",
-    "x": 0.35,
-    "y": 0.33,
+    "x": 0.215,
+    "y": 0.34,
     "area_ar": "الشمال الغربي الأوسط",
     "nearest_node": "FF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه غربًا؛ الغرفة الصغيرة بجوار غرفة اجتماعات الرئيس.",
     "directions_en": "Go to the first floor and follow the route to Communication Room.",
     "aliases": "غرفة الاتصالات | الاتصالات | communication room | telecom room",
-    "area_en": "Northwest Central"
+    "area_en": "Northwest Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-LADIES-1",
@@ -1139,15 +1188,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-023",
-    "x": 0.08,
-    "y": 0.79,
+    "x": 0.06,
+    "y": 0.805,
     "area_ar": "الجنوب الغربي",
     "nearest_node": "FF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه جنوبًا ثم غربًا حتى الركن الجنوبي الغربي.",
     "directions_en": "Go to the first floor and follow the route to Ladies Department 1.",
     "aliases": "القسم النسائي | إدارة القسم النسائي | ladies department",
-    "area_en": "Southwest"
+    "area_en": "Southwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-LADIES-2",
@@ -1162,15 +1212,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-022",
-    "x": 0.25,
-    "y": 0.81,
+    "x": 0.165,
+    "y": 0.835,
     "area_ar": "الجنوب الغربي",
     "nearest_node": "FF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "في الممر الجنوبي الغربي، بجوار القسم النسائي الأول.",
     "directions_en": "Go to the first floor and follow the route to Ladies Department 2.",
     "aliases": "القسم النسائي | ladies department 2",
-    "area_en": "Southwest"
+    "area_en": "Southwest",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRM-1",
@@ -1185,15 +1236,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-020",
-    "x": 0.43,
-    "y": 0.67,
+    "x": 0.32,
+    "y": 0.66,
     "area_ar": "الجنوب الأوسط الغربي",
     "nearest_node": "FF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه جنوبًا ثم غربًا بمحاذاة الفناء؛ القسم مقابل المكتبة.",
     "directions_en": "Go to the first floor and follow the route to Public Relations and Media 1.",
     "aliases": "العلاقات العامة والإعلام | العلاقات العامة | الإعلام | public relations | media",
-    "area_en": "South-Central West"
+    "area_en": "South-Central West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRM-2",
@@ -1208,15 +1260,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-019",
-    "x": 0.43,
-    "y": 0.82,
+    "x": 0.315,
+    "y": 0.835,
     "area_ar": "الجنوب الأوسط الغربي",
     "nearest_node": "FF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "في الممر الجنوبي؛ أول قاعة للعلاقات العامة والإعلام من جهة الغرب.",
     "directions_en": "Go to the first floor and follow the route to Public Relations and Media 2.",
     "aliases": "العلاقات العامة والإعلام | العلاقات العامة 2 | public relations and media 2",
-    "area_en": "South-Central West"
+    "area_en": "South-Central West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-PRM-3",
@@ -1231,15 +1284,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-018",
-    "x": 0.55,
-    "y": 0.82,
+    "x": 0.405,
+    "y": 0.835,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "FF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "في الممر الجنوبي؛ بجوار قسم العلاقات العامة والإعلام رقم 019.",
     "directions_en": "Go to the first floor and follow the route to Public Relations and Media 3.",
     "aliases": "العلاقات العامة والإعلام | العلاقات العامة 3 | public relations and media 3",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-LIB",
@@ -1254,15 +1308,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-017",
-    "x": 0.6,
-    "y": 0.66,
+    "x": 0.5,
+    "y": 0.655,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "FF-C-CENTER",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه جنوبًا بمحاذاة الفناء؛ المكتبة الكبيرة في منتصف الجناح الجنوبي.",
     "directions_en": "Go to the first floor and follow the route to Library.",
     "aliases": "المكتبة | مكتبة | library",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-HR",
@@ -1277,7 +1332,7 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-001",
-    "x": 0.73,
+    "x": 0.685,
     "y": 0.08,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "FF-C-NORTH",
@@ -1285,7 +1340,8 @@
     "directions_ar": "من المصعد اتجه شرقًا عبر الممر الشمالي؛ الإدارة أول مساحة كبيرة.",
     "directions_en": "Go to the first floor and follow the route to Human Resources.",
     "aliases": "الموارد البشرية | إدارة الموارد البشرية | HR | human resources",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-HR-SUP",
@@ -1300,7 +1356,7 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-003",
-    "x": 0.82,
+    "x": 0.78,
     "y": 0.08,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "FF-C-NORTH",
@@ -1308,7 +1364,8 @@
     "directions_ar": "اتجه شرقًا من المصعد؛ المكتب بجوار إدارة الموارد البشرية.",
     "directions_en": "Go to the first floor and follow the route to HR Supervisor.",
     "aliases": "مشرف الموارد البشرية | HR supervisor",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-HR-MGR-SEC",
@@ -1323,7 +1380,7 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-005",
-    "x": 0.9,
+    "x": 0.86,
     "y": 0.08,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "FF-C-NORTH",
@@ -1331,7 +1388,8 @@
     "directions_ar": "في نهاية الممر الشمالي الشرقي، قبل مكتب مدير الموارد البشرية.",
     "directions_en": "Go to the first floor and follow the route to HR Manager Secretary.",
     "aliases": "سكرتير مدير الموارد البشرية | سكرتارية الموارد البشرية | HR manager secretary",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-HR-MGR",
@@ -1346,7 +1404,7 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-006",
-    "x": 0.94,
+    "x": 0.945,
     "y": 0.18,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "FF-C-EAST",
@@ -1354,7 +1412,8 @@
     "directions_ar": "من المصعد اتجه شرقًا حتى نهاية الممر ثم جنوبًا قليلًا.",
     "directions_en": "Go to the first floor and follow the route to HR Manager.",
     "aliases": "مدير الموارد البشرية | HR manager",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-HR-DEPT",
@@ -1370,14 +1429,15 @@
     "floor_en": "First Floor",
     "room": "B01-F-004",
     "x": 0.78,
-    "y": 0.31,
+    "y": 0.255,
     "area_ar": "الشمال الشرقي الأوسط",
     "nearest_node": "FF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا؛ تقع أسفل الممر الشمالي بجوار الأرشيف.",
     "directions_en": "Go to the first floor and follow the route to Human Resources Offices.",
     "aliases": "مكاتب الموارد البشرية | قسم الموارد البشرية | human resources offices",
-    "area_en": "Northeast Central"
+    "area_en": "Northeast Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-ARCHIVE",
@@ -1392,15 +1452,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-002",
-    "x": 0.68,
-    "y": 0.31,
+    "x": 0.675,
+    "y": 0.255,
     "area_ar": "الشمال الأوسط الشرقي",
     "nearest_node": "FF-C-NORTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "بجوار المصعد من الجهة الشرقية وتحت إدارة الموارد البشرية.",
     "directions_en": "Go to the first floor and follow the route to Archive.",
     "aliases": "الأرشيف | المحفوظات | archive | records",
-    "area_en": "North-Central East"
+    "area_en": "North-Central East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-HR-MEET",
@@ -1415,15 +1476,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-008",
-    "x": 0.78,
-    "y": 0.49,
+    "x": 0.79,
+    "y": 0.465,
     "area_ar": "الشرق الأوسط",
     "nearest_node": "FF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه شرقًا ثم جنوبًا؛ الغرفة بجوار المستودع.",
     "directions_en": "Go to the first floor and follow the route to HR Meeting Room.",
     "aliases": "غرفة اجتماعات الموارد البشرية | غرفة الاجتماعات | HR meeting room",
-    "area_en": "East Central"
+    "area_en": "East Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-STORAGE",
@@ -1438,15 +1500,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-ST-03",
-    "x": 0.72,
-    "y": 0.43,
+    "x": 0.73,
+    "y": 0.395,
     "area_ar": "الشرق الأوسط",
     "nearest_node": "FF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه شرقًا ثم جنوبًا؛ المستودع الصغير بجوار غرفة الاجتماعات.",
     "directions_en": "Go to the first floor and follow the route to Storage.",
     "aliases": "المستودع | المخزن | storage",
-    "area_en": "East Central"
+    "area_en": "East Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-FIN-DEPT",
@@ -1461,15 +1524,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-009",
-    "x": 0.91,
-    "y": 0.6,
+    "x": 0.945,
+    "y": 0.535,
     "area_ar": "الشرق",
     "nearest_node": "FF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "من المصعد اتجه شرقًا ثم جنوبًا عبر الجناح الشرقي.",
     "directions_en": "Go to the first floor and follow the route to Finance Management.",
     "aliases": "الإدارة المالية | المالية | قسم المالية | finance management | finance department",
-    "area_en": "East"
+    "area_en": "East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-FIN-MGR",
@@ -1484,15 +1548,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-010",
-    "x": 0.91,
-    "y": 0.83,
+    "x": 0.945,
+    "y": 0.805,
     "area_ar": "الجنوب الشرقي",
     "nearest_node": "FF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "اتجه جنوبًا ثم شرقًا حتى نهاية الممر الجنوبي.",
     "directions_en": "Go to the first floor and follow the route to Finance Manager.",
     "aliases": "مدير الإدارة المالية | مدير المالية | finance manager",
-    "area_en": "Southeast"
+    "area_en": "Southeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-FIN-SEC",
@@ -1507,15 +1572,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-011",
-    "x": 0.8,
-    "y": 0.83,
+    "x": 0.865,
+    "y": 0.805,
     "area_ar": "الجنوب الشرقي",
     "nearest_node": "FF-C-SOUTH",
     "confidence_ar": "مؤكد",
     "directions_ar": "في الممر الجنوبي الشرقي، بجوار مكتب مدير الإدارة المالية.",
     "directions_en": "Go to the first floor and follow the route to Finance Secretary.",
     "aliases": "سكرتير المالية | سكرتارية الإدارة المالية | finance secretary",
-    "area_en": "Southeast"
+    "area_en": "Southeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-WC-W-N",
@@ -1530,15 +1596,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-WC-12",
-    "x": 0.35,
-    "y": 0.57,
+    "x": 0.22,
+    "y": 0.58,
     "area_ar": "الغرب الأوسط",
     "nearest_node": "FF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "بجوار غرفة اجتماعات الرئيس والعلاقات العامة والإعلام.",
     "directions_en": "Go to the first floor and follow the route to West Upper Restrooms.",
     "aliases": "دورات المياه | الحمام | حمامات الجناح الغربي | restroom | bathroom | toilet",
-    "area_en": "West Central"
+    "area_en": "West Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-WC-W",
@@ -1553,15 +1620,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-WC-01",
-    "x": 0.27,
-    "y": 0.7,
+    "x": 0.205,
+    "y": 0.67,
     "area_ar": "الغرب",
     "nearest_node": "FF-C-WEST",
     "confidence_ar": "مؤكد",
     "directions_ar": "في الممر الغربي بين مكاتب الرئيس والقسم النسائي.",
     "directions_en": "Go to the first floor and follow the route to West Restrooms.",
     "aliases": "دورات المياه | الحمام | حمامات الغرب | restroom | bathroom | toilet",
-    "area_en": "West"
+    "area_en": "West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-WC-E",
@@ -1576,15 +1644,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-WC-09",
-    "x": 0.88,
-    "y": 0.53,
+    "x": 0.8,
+    "y": 0.6,
     "area_ar": "الشرق",
     "nearest_node": "FF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "في الممر الشرقي بين الإدارة المالية ومكتب مدير الموارد البشرية.",
     "directions_en": "Go to the first floor and follow the route to East Restrooms.",
     "aliases": "دورات المياه | الحمام | حمامات الشرق | restroom | bathroom | toilet",
-    "area_en": "East"
+    "area_en": "East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-WC-HR",
@@ -1599,15 +1668,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-WC-08",
-    "x": 0.89,
-    "y": 0.28,
+    "x": 0.875,
+    "y": 0.255,
     "area_ar": "الشمال الشرقي",
     "nearest_node": "FF-C-EAST",
     "confidence_ar": "مؤكد",
     "directions_ar": "بجوار مكتب مدير الموارد البشرية والدرج الشرقي.",
     "directions_en": "Go to the first floor and follow the route to HR Restroom.",
     "aliases": "دورة مياه الموارد البشرية | حمام الموارد البشرية | HR restroom",
-    "area_en": "Northeast"
+    "area_en": "Northeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-GEN-014",
@@ -1622,15 +1692,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-014",
-    "x": 0.72,
-    "y": 0.84,
+    "x": 0.785,
+    "y": 0.835,
     "area_ar": "الجنوب الشرقي",
     "nearest_node": "GF-REC",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اتجه إلى الممر الجنوبي ثم تابع شرقًا حتى الغرفة G-014. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, follow the south corridor east to room G-014. Room type needs confirmation.",
     "aliases": "G-014 | B01-G-014 | غرفة G-014 | قاعة G-014 | room G-014 | classroom G-014",
-    "area_en": "Southeast"
+    "area_en": "Southeast",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-GEN-015",
@@ -1645,15 +1716,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-015",
-    "x": 0.64,
-    "y": 0.84,
+    "x": 0.695,
+    "y": 0.835,
     "area_ar": "الجنوب الأوسط الشرقي",
     "nearest_node": "GF-REC",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اتجه جنوبًا إلى الممر السفلي ثم شرقًا قليلًا حتى الغرفة G-015. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, go south to the lower corridor, then slightly east to room G-015. Room type needs confirmation.",
     "aliases": "G-015 | B01-G-015 | غرفة G-015 | قاعة G-015 | room G-015 | classroom G-015",
-    "area_en": "South-Central East"
+    "area_en": "South-Central East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-GEN-016",
@@ -1668,15 +1740,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-016",
-    "x": 0.55,
-    "y": 0.84,
+    "x": 0.615,
+    "y": 0.835,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اتجه جنوبًا إلى الممر السفلي حتى الغرفة G-016. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, go south to the lower corridor to room G-016. Room type needs confirmation.",
     "aliases": "G-016 | B01-G-016 | غرفة G-016 | قاعة G-016 | room G-016 | classroom G-016",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-GEN-019",
@@ -1691,15 +1764,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-019",
-    "x": 0.43,
-    "y": 0.84,
+    "x": 0.405,
+    "y": 0.835,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اتجه جنوبًا عبر الممر الرئيسي حتى الغرفة G-019. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, go south along the main corridor to room G-019. Room type needs confirmation.",
     "aliases": "G-019 | B01-G-019 | غرفة G-019 | قاعة G-019 | room G-019 | classroom G-019",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-GEN-020",
@@ -1714,15 +1788,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-020",
-    "x": 0.52,
-    "y": 0.84,
+    "x": 0.505,
+    "y": 0.835,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اتجه جنوبًا ثم إلى الممر السفلي حتى الغرفة G-020. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, go south to the lower corridor to room G-020. Room type needs confirmation.",
     "aliases": "G-020 | B01-G-020 | غرفة G-020 | قاعة G-020 | room G-020 | classroom G-020",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-GEN-022",
@@ -1737,15 +1812,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-022",
-    "x": 0.34,
-    "y": 0.84,
+    "x": 0.315,
+    "y": 0.835,
     "area_ar": "الجنوب الغربي الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اتجه جنوبًا ثم غربًا عبر الممر السفلي حتى الغرفة G-022. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, go south, then west along the lower corridor to room G-022. Room type needs confirmation.",
     "aliases": "G-022 | B01-G-022 | غرفة G-022 | قاعة G-022 | room G-022 | classroom G-022",
-    "area_en": "Southwest Central"
+    "area_en": "Southwest Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "GF-GEN-026",
@@ -1760,15 +1836,16 @@
     "floor_ar": "الدور الأرضي",
     "floor_en": "Ground Floor",
     "room": "B01-G-026",
-    "x": 0.22,
-    "y": 0.5,
+    "x": 0.21,
+    "y": 0.485,
     "area_ar": "الغرب الأوسط",
     "nearest_node": "GF-REC",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اتجه غربًا عبر الممر المحيط بالفناء حتى الغرفة G-026. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, follow the west corridor around the courtyard to room G-026. Room type needs confirmation.",
     "aliases": "G-026 | B01-G-026 | غرفة G-026 | قاعة G-026 | room G-026 | classroom G-026",
-    "area_en": "West Central"
+    "area_en": "West Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-GEN-007",
@@ -1783,15 +1860,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-007",
-    "x": 0.86,
-    "y": 0.4,
+    "x": 0.875,
+    "y": 0.395,
     "area_ar": "الشرق",
     "nearest_node": "B01-F-EL-02",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اصعد بالمصعد إلى الدور الأول، ثم اتجه شرقًا عبر الممر حتى الغرفة F-007. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, take the elevator to the first floor, then follow the east corridor to room F-007. Room type needs confirmation.",
     "aliases": "F-007 | B01-F-007 | غرفة F-007 | قاعة F-007 | room F-007 | classroom F-007",
-    "area_en": "East"
+    "area_en": "East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-GEN-012",
@@ -1806,15 +1884,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-012",
-    "x": 0.7,
-    "y": 0.82,
+    "x": 0.785,
+    "y": 0.805,
     "area_ar": "الجنوب الشرقي الأوسط",
     "nearest_node": "B01-F-EL-02",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اصعد بالمصعد إلى الدور الأول، ثم اتجه جنوبًا إلى الممر السفلي حتى الغرفة F-012. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, take the elevator to the first floor, then go south to the lower corridor to room F-012. Room type needs confirmation.",
     "aliases": "F-012 | B01-F-012 | غرفة F-012 | قاعة F-012 | room F-012 | classroom F-012",
-    "area_en": "Southeast Central"
+    "area_en": "Southeast Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-GEN-013",
@@ -1829,15 +1908,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-013",
-    "x": 0.63,
-    "y": 0.82,
+    "x": 0.7,
+    "y": 0.805,
     "area_ar": "الجنوب الأوسط الشرقي",
     "nearest_node": "B01-F-EL-02",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اصعد بالمصعد إلى الدور الأول، ثم اتجه جنوبًا إلى الممر السفلي حتى الغرفة F-013. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, take the elevator to the first floor, then go south to the lower corridor to room F-013. Room type needs confirmation.",
     "aliases": "F-013 | B01-F-013 | غرفة F-013 | قاعة F-013 | room F-013 | classroom F-013",
-    "area_en": "South-Central East"
+    "area_en": "South-Central East",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-GEN-014",
@@ -1852,15 +1932,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-014",
-    "x": 0.57,
-    "y": 0.82,
+    "x": 0.615,
+    "y": 0.805,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "B01-F-EL-02",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اصعد بالمصعد إلى الدور الأول، ثم اتجه جنوبًا عبر الممر حتى الغرفة F-014. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, take the elevator to the first floor, then go south along the corridor to room F-014. Room type needs confirmation.",
     "aliases": "F-014 | B01-F-014 | غرفة F-014 | قاعة F-014 | room F-014 | classroom F-014",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-GEN-015",
@@ -1875,15 +1956,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-015",
-    "x": 0.51,
-    "y": 0.82,
+    "x": 0.535,
+    "y": 0.805,
     "area_ar": "الجنوب الأوسط",
     "nearest_node": "B01-F-EL-02",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اصعد بالمصعد إلى الدور الأول، ثم اتجه جنوبًا وغربًا قليلًا حتى الغرفة F-015. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, take the elevator to the first floor, then go south and slightly west to room F-015. Room type needs confirmation.",
     "aliases": "F-015 | B01-F-015 | غرفة F-015 | قاعة F-015 | room F-015 | classroom F-015",
-    "area_en": "South Central"
+    "area_en": "South Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-GEN-016",
@@ -1898,15 +1980,16 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-016",
-    "x": 0.47,
-    "y": 0.67,
+    "x": 0.425,
+    "y": 0.66,
     "area_ar": "الجنوب الأوسط الغربي",
     "nearest_node": "B01-F-EL-02",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اصعد بالمصعد إلى الدور الأول، ثم اتجه غربًا عبر الممر الجنوبي حتى الغرفة F-016. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, take the elevator to the first floor, then follow the south corridor west to room F-016. Room type needs confirmation.",
     "aliases": "F-016 | B01-F-016 | غرفة F-016 | قاعة F-016 | room F-016 | classroom F-016",
-    "area_en": "South-Central West"
+    "area_en": "South-Central West",
+    "coordinate_status": "reviewed_against_floor_plan"
   },
   {
     "id": "FF-GEN-021",
@@ -1921,14 +2004,15 @@
     "floor_ar": "الدور الأول",
     "floor_en": "First Floor",
     "room": "B01-F-021",
-    "x": 0.34,
-    "y": 0.82,
+    "x": 0.245,
+    "y": 0.805,
     "area_ar": "الجنوب الغربي الأوسط",
     "nearest_node": "B01-F-EL-02",
     "confidence_ar": "يحتاج تأكيد نوع الغرفة",
     "directions_ar": "من الاستقبال اصعد بالمصعد إلى الدور الأول، ثم اتجه غربًا إلى الممر السفلي حتى الغرفة F-021. نوع الغرفة يحتاج تأكيدًا.",
     "directions_en": "From Reception, take the elevator to the first floor, then go west to the lower corridor to room F-021. Room type needs confirmation.",
     "aliases": "F-021 | B01-F-021 | غرفة F-021 | قاعة F-021 | room F-021 | classroom F-021",
-    "area_en": "Southwest Central"
+    "area_en": "Southwest Central",
+    "coordinate_status": "reviewed_against_floor_plan"
   }
 ]
