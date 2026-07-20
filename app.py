@@ -426,8 +426,51 @@ if not language:
 t = TEXT[language]
 is_ar = language == "العربية"
 
-with st.sidebar:
-    st.subheader(t["voice_search"])
+# Responsive styling. The voice recorder is kept in the main page rather than
+# the sidebar because an open sidebar makes the Arabic interface extremely
+# narrow on phones and can force words to appear one letter per line.
+st.markdown(
+    f"""
+    <style>
+    section[data-testid="stSidebar"] {{ display:none !important; }}
+    [data-testid="collapsedControl"] {{ display:none !important; }}
+
+    .block-container {{
+        max-width: 980px;
+        padding-top: 1.25rem;
+        padding-bottom: 2rem;
+    }}
+
+    /* Some mobile Safari versions show a false recorder alert even though the
+       recording was captured correctly. Hide only the recorder's internal alert;
+       our own translated messages below remain visible. */
+    [data-testid="stAudioInput"] [role="alert"] {{ display:none !important; }}
+
+    @media (max-width: 640px) {{
+        .block-container {{
+            width:100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: .75rem;
+        }}
+        h1 {{ font-size: 2rem !important; line-height: 1.45 !important; }}
+        h2, h3 {{ line-height: 1.45 !important; }}
+        p, label, button, input {{ overflow-wrap: normal !important; word-break: normal !important; }}
+        div[data-testid="stHorizontalBlock"] {{ gap: .65rem; }}
+    }}
+
+    {'html, body, .stApp, .stMarkdown, .stAlert { direction:rtl; text-align:right; } div[data-baseweb="select"] > div { direction:rtl; text-align:right; }' if is_ar else ''}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.title(t["title"])
+st.caption(t["subtitle"])
+
+# Voice search is shown in a collapsible section in the main page so it remains
+# usable and readable on both desktop and mobile screens.
+with st.expander(t["voice_search"], expanded=False):
     st.caption(t["voice_help"])
     voice_mode = st.selectbox(
         t["voice_language"],
@@ -442,6 +485,7 @@ with st.sidebar:
         t["voice_process"],
         use_container_width=True,
         disabled=voice_recording is None,
+        key="process_voice_button",
     )
 
     if process_voice and voice_recording is not None:
@@ -452,10 +496,9 @@ with st.sidebar:
             if transcript:
                 st.info(f"**{t['voice_heard']}:** {transcript}")
             if voice_item is not None and match_score >= 0.48:
+                selected_voice_name = voice_item["name_ar"] if is_ar else voice_item["name_en"]
                 select_destination_item(voice_item, language)
-                st.success(
-                    voice_item["name_ar"] if is_ar else voice_item["name_en"]
-                )
+                st.session_state["voice_success_message"] = selected_voice_name
                 st.rerun()
             else:
                 st.warning(t["voice_not_found"])
@@ -464,31 +507,11 @@ with st.sidebar:
         except Exception:
             st.error(t["voice_not_found"])
 
-    st.divider()
-    st.caption(
-        "الاختيار اليدوي متاح في الصفحة ←" if is_ar
-        else "Manual selection remains available on the page →"
+if st.session_state.pop("voice_success_message", None):
+    st.success(
+        "تم تحديد الوجهة بالصوت بنجاح." if is_ar
+        else "The destination was selected successfully by voice."
     )
-
-if is_ar:
-    st.markdown(
-        """
-        <style>
-        .stApp, .stMarkdown, .stAlert, p, h1, h2, h3 {
-            direction: rtl;
-            text-align: right;
-        }
-        div[data-baseweb="select"] > div {
-            direction: rtl;
-            text-align: right;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-st.title(t["title"])
-st.caption(t["subtitle"])
 
 category_key = "category_ar" if is_ar else "category_en"
 subcategory_key = "subcategory_ar" if is_ar else "subcategory_en"
