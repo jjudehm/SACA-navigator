@@ -18,6 +18,14 @@ FLOOR_MAPS = {
     "FF": ASSETS_DIR / "ff_plan.jpg",
 }
 
+# The assumed starting point changes with the displayed floor:
+# - Ground floor: Reception.
+# - First floor: The elevator reached from Reception.
+CURRENT_POSITION = {
+    "GF": {"x": 0.495, "y": 0.225},
+    "FF": {"x": 0.595, "y": 0.255},
+}
+
 
 @st.cache_data
 def load_locations():
@@ -479,6 +487,12 @@ left, top, right, bottom = BUILDING_BOUNDS.get(
 x = left + raw_x * (right - left)
 y = top + raw_y * (bottom - top)
 
+current_position = CURRENT_POSITION.get(floor_code, {"x": 0.5, "y": 0.5})
+current_x = left + current_position["x"] * (right - left)
+current_y = top + current_position["y"] * (bottom - top)
+current_label = "أنت هنا" if is_ar else "You're here"
+destination_label = "الوجهة" if is_ar else "Destination"
+
 st.subheader(t["coordinates"])
 
 if map_path and map_path.exists():
@@ -497,7 +511,7 @@ if map_path and map_path.exists():
             width:100%;
             height:auto;
             object-fit:contain;">
-        <div title="Destination" style="
+        <div title="{destination_label}" style="
             position:absolute;
             left:calc({x * 100}% - 9px);
             top:calc({y * 100}% - 9px);
@@ -507,8 +521,50 @@ if map_path and map_path.exists():
             background:#e11d48;
             border:3px solid white;
             box-shadow:0 0 0 4px rgba(225,29,72,.28), 0 2px 8px rgba(0,0,0,.55);
-            line-height:1;">
+            line-height:1;
+            z-index:3;">
         </div>
+
+        <div title="{current_label}" style="
+            position:absolute;
+            left:calc({current_x * 100}% - 15px);
+            top:calc({current_y * 100}% - 16px);
+            width:30px;
+            height:32px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:27px;
+            line-height:1;
+            filter:drop-shadow(0 2px 3px rgba(0,0,0,.7));
+            z-index:5;">⭐️
+        </div>
+        <div style="
+            position:absolute;
+            left:calc({current_x * 100}% + 13px);
+            top:calc({current_y * 100}% - 14px);
+            background:rgba(15,118,110,.94);
+            color:white;
+            border:2px solid white;
+            border-radius:8px;
+            padding:4px 8px;
+            font:700 12px Arial,sans-serif;
+            line-height:1.2;
+            white-space:nowrap;
+            box-shadow:0 2px 7px rgba(0,0,0,.35);
+            z-index:4;">{current_label}
+        </div>
+    </div>
+    <div style="
+        display:flex;
+        gap:18px;
+        flex-wrap:wrap;
+        align-items:center;
+        padding:10px 4px 0;
+        font:14px Arial,sans-serif;
+        line-height:1.4;">
+        <span>⭐️ {current_label}</span>
+        <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#e11d48;margin-inline-end:5px;"></span>{destination_label}</span>
     </div>
     """
     components.html(map_html, height=500, scrolling=False)
