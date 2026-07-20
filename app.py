@@ -253,6 +253,35 @@ language = st.selectbox(
     key="language_selector",
 )
 
+# Reset the navigation flow whenever the language changes.
+# Stored category/destination names are language-specific, so keeping the old
+# values would cause a StopIteration error after switching languages.
+previous_language = st.session_state.get("_active_language")
+if language and previous_language and language != previous_language:
+    for key in [
+        "language_done",
+        "main_done",
+        "sub_done",
+        "destination_done",
+        "selected_main",
+        "selected_sub",
+        "selected_destination",
+        "main_selector",
+        "sub_selector",
+        "destination_selector",
+    ]:
+        st.session_state.pop(key, None)
+
+    st.session_state["language_done"] = False
+    st.session_state["main_done"] = False
+    st.session_state["sub_done"] = False
+    st.session_state["destination_done"] = False
+    st.session_state["_active_language"] = language
+    st.rerun()
+
+if language:
+    st.session_state["_active_language"] = language
+
 if not language:
     st.title("✈️ SACA Smart Assistant")
     st.info("اختر اللغة للبدء / Choose a language to begin")
