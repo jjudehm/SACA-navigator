@@ -1,9 +1,13 @@
 import base64
 import json
+import re
+from difflib import SequenceMatcher
+from io import BytesIO
 from pathlib import Path
 
 import streamlit as st
 import streamlit.components.v1 as components
+import speech_recognition as sr
 
 st.set_page_config(
     page_title="SACA Smart Assistant",
@@ -69,6 +73,13 @@ TEXT = {
         "playing": "جارٍ تشغيل الرد...",
         "stopped": "تم إيقاف الصوت",
         "voice_error": "تعذر تشغيل الصوت. تأكد من رفع صوت الجهاز وجرب متصفح Chrome أو Edge.",
+        "voice_search": "🎤 البحث بالصوت",
+        "voice_help": "سجّل اسم المكان بالعربي أو الإنجليزي، أو استخدم الاختيار اليدوي في الصفحة.",
+        "voice_language": "لغة التحدث",
+        "voice_process": "فهم التسجيل",
+        "voice_heard": "سمعت",
+        "voice_not_found": "لم أتعرف على المكان بوضوح. جرّب قول اسم المكان أو رقم الغرفة.",
+        "voice_service_error": "تعذر الاتصال بخدمة تحويل الصوت إلى نص. حاول مرة أخرى.",
         "answer_intro": "المكان الذي اخترته هو",
         "room_phrase": "رقم الغرفة",
         "route_phrase": "طريقة الوصول",
@@ -103,6 +114,13 @@ TEXT = {
         "playing": "Playing response...",
         "stopped": "Audio stopped",
         "voice_error": "Audio could not be played. Check your device volume and try Chrome or Edge.",
+        "voice_search": "🎤 Voice search",
+        "voice_help": "Record the destination in Arabic or English, or continue with manual selection on the page.",
+        "voice_language": "Spoken language",
+        "voice_process": "Understand recording",
+        "voice_heard": "I heard",
+        "voice_not_found": "I could not identify the destination clearly. Try saying its name or room number.",
+        "voice_service_error": "The speech-to-text service could not be reached. Please try again.",
         "answer_intro": "Your selected destination is",
         "room_phrase": "Room",
         "route_phrase": "Directions",
@@ -134,6 +152,116 @@ AREA_AR_TO_EN = {
     "الجنوب الأوسط الغربي": "South-Central West",
     "الشمال الأوسط الشرقي": "North-Central East",
 }
+
+
+def normalize_search_text(value):
+    """Normalize Arabic/English speech text for destination matching."""
+    value = str(value or "").strip().lower()
+    value = value.replace("أ", "ا").replace("إ", "ا").replace("آ", "ا")
+    value = value.replace("ة", "ه").replace("ى", "ي")
+    value = re.sub(r"[ًٌٍَُِّْـ]", "", value)
+    value = re.sub(r"[^\w\s-]", " ", value, flags=re.UNICODE)
+    value = re.sub(r"\s+", " ", value).strip()
+    filler_phrases = [
+        "ابغى اروح", "ابي اروح", "اريد الذهاب الى", "اريد اروح", "وين", "اين",
+        "دلني على", "خذني الى", "روحني", "موقع", "مكان",
+        "i want to go to", "take me to", "where is", "where's", "show me",
+        "navigate to", "directions to", "location of", "please",
+    ]
+    for phrase in filler_phrases:
+        value = value.replace(phrase, " ")
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def destination_search_text(item):
+    fields = [
+        item.get("name_ar"), item.get("name_en"), item.get("aliases"),
+        item.get("room"), item.get("category_ar"), item.get("category_en"),
+        item.get("subcategory_ar"), item.get("subcategory_en"),
+    ]
+    return normalize_search_text(" | ".join(str(v) for v in fields if v))
+
+
+def match_destination(transcript):
+    query = normalize_search_text(transcript)
+    if not query:
+        return None, 0.0
+
+    best_item = None
+    best_score = 0.0
+    query_tokens = set(query.split())
+
+    for item in locations:
+        searchable = destination_search_text(item)
+        searchable_tokens = set(searchable.split())
+
+        # Exact room codes and complete destination names should win immediately.
+        compact_query = re.sub(r"[^a-z0-9]", "", query)
+        compact_room = re.sub(r"[^a-z0-9]", "", str(item.get("room") or "").lower())
+        room_score = 1.0 if compact_room and compact_room in compact_query else 0.0
+
+        exact_name_score = 0.0
+        for field in (item.get("name_ar"), item.get("name_en")):
+            normalized_name = normalize_search_text(field)
+            if normalized_name and (normalized_name in query or query in normalized_name):
+                exact_name_score = max(exact_name_score, 0.96)
+
+        token_score = 0.0
+        if query_tokens:
+            token_score = len(query_tokens & searchable_tokens) / len(query_tokens)
+
+        sequence_score = SequenceMatcher(None, query, searchable).ratio()
+        score = max(room_score, exact_name_score, token_score * 0.90, sequence_score * 0.72)
+
+        if score > best_score:
+            best_item = item
+            best_score = score
+
+    return best_item, best_score
+
+
+def select_destination_item(item, language):
+    is_arabic = language == "العربية"
+    category_key = "category_ar" if is_arabic else "category_en"
+    subcategory_key = "subcategory_ar" if is_arabic else "subcategory_en"
+    name_key = "name_ar" if is_arabic else "name_en"
+
+    st.session_state.selected_main = item[category_key]
+    st.session_state.selected_sub = item[subcategory_key]
+    st.session_state.selected_destination = item[name_key]
+    st.session_state.main_done = True
+    st.session_state.sub_done = True
+    st.session_state.destination_done = True
+
+
+def transcribe_audio(audio_bytes, voice_mode):
+    recognizer = sr.Recognizer()
+    with sr.AudioFile(BytesIO(audio_bytes)) as source:
+        audio_data = recognizer.record(source)
+
+    language_codes = {
+        "العربية": ["ar-SA"],
+        "English": ["en-US"],
+        "تلقائي / Auto": ["ar-SA", "en-US"],
+    }[voice_mode]
+
+    candidates = []
+    errors = []
+    for language_code in language_codes:
+        try:
+            transcript = recognizer.recognize_google(audio_data, language=language_code)
+            item, score = match_destination(transcript)
+            candidates.append((score, transcript, item, language_code))
+        except sr.UnknownValueError:
+            errors.append("unknown")
+        except sr.RequestError as exc:
+            raise RuntimeError(str(exc)) from exc
+
+    if not candidates:
+        return None, None, 0.0
+
+    score, transcript, item, _ = max(candidates, key=lambda candidate: candidate[0])
+    return transcript, item, score
 
 
 def reset_after(step_name):
@@ -297,6 +425,50 @@ if not language:
 
 t = TEXT[language]
 is_ar = language == "العربية"
+
+with st.sidebar:
+    st.subheader(t["voice_search"])
+    st.caption(t["voice_help"])
+    voice_mode = st.selectbox(
+        t["voice_language"],
+        ["تلقائي / Auto", "العربية", "English"],
+        key="voice_language_selector",
+    )
+    voice_recording = st.audio_input(
+        "سجّل صوتك / Record your voice",
+        key="destination_voice_recording",
+    )
+    process_voice = st.button(
+        t["voice_process"],
+        use_container_width=True,
+        disabled=voice_recording is None,
+    )
+
+    if process_voice and voice_recording is not None:
+        try:
+            transcript, voice_item, match_score = transcribe_audio(
+                voice_recording.getvalue(), voice_mode
+            )
+            if transcript:
+                st.info(f"**{t['voice_heard']}:** {transcript}")
+            if voice_item is not None and match_score >= 0.48:
+                select_destination_item(voice_item, language)
+                st.success(
+                    voice_item["name_ar"] if is_ar else voice_item["name_en"]
+                )
+                st.rerun()
+            else:
+                st.warning(t["voice_not_found"])
+        except RuntimeError:
+            st.error(t["voice_service_error"])
+        except Exception:
+            st.error(t["voice_not_found"])
+
+    st.divider()
+    st.caption(
+        "الاختيار اليدوي متاح في الصفحة ←" if is_ar
+        else "Manual selection remains available on the page →"
+    )
 
 if is_ar:
     st.markdown(
